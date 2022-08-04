@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    /> 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ 
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card-body">
+            <form class="search-form" id="search-form">
+              <input
+              type="search"
+              id="search-input"
+              placeholder="Enter a city..." 
+              />
+              <button class="search-button" id="search-button">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-3">
+          <h2 class="card-title city">
+            <strong class="location" id="cityname">Alicante</strong>
+          </h2>
+        </div>
+        <div class="col-sm-3">
+              <h5>
+                <strong><span id="date">26,Sunday</span></strong> 
+              <div><strong>
+              <span class="temperature" id ="temperature" > 28 </span>°C/°F
+              </strong>
+              </div>
+              <div>
+                Humidity: 80% 
+                <br />
+                Wind: 5km/h
+              </div>
+            </h5>
+          </div>
+        <div class="col-sm-3">
+              <ul>
+                <li>Morning 24°C</li>
+                <li>Afternoon 25°C</li>
+                <li>Evening 22°C</li>
+                <li>Overnight 20°C</li>
+              </ul>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div class="row">
+      <div class="col-2day">Mon<span>⛅</span><br />28°C/19°C</div>
+        <div class="col-2day">Tue<span>☀</span><br />28°C/19°C</div>
+        <div class="col-2day">Wed<span>☀</span><br />28°C/19°C</div>
+        <div class="col-2day">Thu<span>☀</span><br />28°C/19°C</div>
+        <div class="col-2day">Fri<span>☀</span><br />28°C/19°C</div>
+        <div class="col-2day">Sat<span>⛅</span><br />28°C/19°C</div>
+      </div>
+    </div>   
+
+     
+      <script src="src/index.js"></script>;
+  </body> 
+</html>
